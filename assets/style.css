@@ -1,11 +1,11 @@
 :root {
     --text-color: #DBE4EF;
-    --card-front-color: #144480;
+    --card-front-color: #5020aad0;
     --card-back-color: #00F4BF;
 }
 
 body{
-    background:url(img/bg-desktop.webp);
+    background:url(img/florroxa.webp);
     font-family: Bai Jamjuree;
 }
  #container{
@@ -56,6 +56,25 @@ font-weight: 500;
 .cartao__conteudo__resposta{
 color: var(--text-color);
 font-weight: 700;
+}
+
+.cartao:hover .cartao__conteudo{
+transform: rotateY(180deg);
+
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta{
+backface-visibility: hidden;
+position: absolute;
+height: 100%;
+width: 100%;
+
+}
+
+.cartao__conteudo__resposta{
+transform: rotateY(180deg);
+
 }
 
 footer{
